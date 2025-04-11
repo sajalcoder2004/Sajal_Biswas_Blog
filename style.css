@@ -1,0 +1,136 @@
+
+
+/* Custom Navbar Styling */
+.custom-navbar {
+    background: linear-gradient(90deg, #1a1a2e, #16213e);
+    padding: 15px 0;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .nav-link {
+    color: #dcdcdc !important;
+    margin-left: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background-color: #00f2fe;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  
+  
+  .nav-link:hover {
+    color: #00f2fe !important;
+  }
+
+  
+
+  
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fadeIn 1.2s ease-in-out both;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    animation: slideDown 1s ease forwards;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-top: 15px;
+    color: #e0e0e0;
+    animation: slideUp 1s ease forwards;
+  }
+  
+  .hero-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  
+/* Footer Section Styling */
+.footer-section {
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.footer-section a:hover {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
